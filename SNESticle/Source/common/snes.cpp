@@ -1026,7 +1026,7 @@ void SnesSystem::ExecuteFrame(Emu::SysInputT  *pInput, CRenderSurface *pTarget, 
 	SyncPPU();
 
 	m_PPU.EndFrame();
-	m_PPURender.EndRender();
+	
 
     //ExecuteLine();
     //ExecuteLine();
@@ -1063,6 +1063,8 @@ void SnesSystem::ExecuteFrame(Emu::SysInputT  *pInput, CRenderSurface *pTarget, 
 			m_IO.m_Regs.hvbjoy&= ~0x01;
 		}
 	}
+
+	m_PPURender.EndRender();
 
     // clear 'BLANK NMI' flag at end of v-blank
     m_IO.m_Regs.rdnmi &= ~0x80;

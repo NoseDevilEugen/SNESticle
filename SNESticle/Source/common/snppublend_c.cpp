@@ -194,7 +194,7 @@ void SNPPUBlendC::UpdatePalette(SNPPUBlendInfoT *pInfo, Uint16 *pCGRam, Uint32 u
 		PixelFormatT *pPixelFormat;
         PaletteT *pPal = pInfo->Pal;
 
-		uIntensity = 0xF;
+		//uIntensity = 0xF;
 
 		pPixelFormat = m_pTarget->GetFormat();
 		for (iEntry=0; iEntry < 256; iEntry++)
@@ -217,7 +217,7 @@ void SNPPUBlendC::UpdatePaletteEntry(SNPPUBlendInfoT *pInfo, Uint32 uAddr, Uint3
 		PixelFormatT *pPixelFormat;
 		PaletteT *pPal = pInfo->Pal;
 
-		uIntensity = 0xF;
+		//uIntensity = 0xF;
 
 		pPixelFormat = m_pTarget->GetFormat();
 		// set palette entry
