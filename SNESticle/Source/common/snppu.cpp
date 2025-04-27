@@ -33,7 +33,7 @@ void SnesPPU::WriteCGDATA(Uint8 uData)
 	m_Regs.cgadd.w++;
 
 	// update palette for surface
-//	m_pRender->SetUpdateFlags(SNESPPURENDER_UPDATE_PAL);
+	m_pRender->SetUpdateFlags(SNESPPURENDER_UPDATE_PAL);
 	m_pRender->UpdateCGRAM(uCGAddr, m_CGRAM[uCGAddr]);
 }
 

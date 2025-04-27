@@ -97,6 +97,7 @@ struct SnesPPURegsT
 	SnesReg8T   	        bg12nba;
 	SnesReg8T   	        bg34nba;
 	
+	SnesReg8T   	        bgofs;
 	SnesReg8T		        bgofslo;
 	SnesReg16T   	        bg1hofs;
 	SnesReg16T   	        bg1vofs;
